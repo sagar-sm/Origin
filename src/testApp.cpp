@@ -25,7 +25,7 @@ void testApp::draw(){
 	ofEnableAntiAliasing();
 	ofEnableAlphaBlending();
 	ofEnableSmoothing();
-    ofSetLineWidth(1.50);
+	ofSetLineWidth(1.50);
 
 	ofSetColor((int)(cellCount)%125, (int)(cellCount)%215, (int)(cellCount)%55, (int)alpha%45+10);
 	ofNoFill();
