@@ -24,19 +24,19 @@ void testApp::draw(){
     
 	ofEnableAntiAliasing();
 	ofEnableAlphaBlending();
-    ofEnableSmoothing();
+	ofEnableSmoothing();
     ofSetLineWidth(1.50);
 
 	ofSetColor((int)(cellCount)%125, (int)(cellCount)%215, (int)(cellCount)%55, (int)alpha%45+10);
 	ofNoFill();
-    ofSetCircleResolution(100);
+	ofSetCircleResolution(100);
 	for (int i = 0; i < cellCount; i++){
 		Cell ci((int)((1024 / 2) + (pow(-1.0f, i)*i*factor)), (int)((768 / 2) + (pow(-1.0f, i)*i*factor)));
 		cells.push_back(ci);
 		cells.at(i).update(factor);
 	}
 	cellCount++;
-    alpha+=0.5;
+	alpha+=0.5;
 	//long t = cells.size();
 	//cout << t << endl;
 
