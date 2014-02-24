@@ -1,9 +1,8 @@
 #pragma once
 
-#ifndef _OF_BALL // if this class hasn't been defined, the program can define it
-#define _OF_BALL // by using this if statement you prevent the class to be called more 
+#ifndef _OF_BALL
+#define _OF_BALL
 
-// than once which would confuse the compiler
 
 #include "ofMain.h"
 
